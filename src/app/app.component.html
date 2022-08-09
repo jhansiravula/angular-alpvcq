@@ -1,0 +1,5 @@
+<form (ngSubmit)='loginUser()' [formGroup]='loginForm' novalidate class="form">
+  <input formControlName='phonenumber' type="text"/>
+  <input type="checkbox" formControlName="check">
+  <button [disabled]='loginForm.invalid'>Login</button>
+</form>
